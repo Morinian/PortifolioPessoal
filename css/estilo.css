@@ -5,7 +5,9 @@
     border: 0;
     padding: 0;
 }
-
+body{
+    background-color: #141414;
+}
 /* Inicio */
 
 header{
@@ -73,4 +75,48 @@ nav .menu{
     width: 50%;
     height: 100%;
     
+    display: flex;
+    align-items: end;
+}
+.caixa{
+    width: 100%;
+
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.paula{
+    width: 100%;
+    height: 50%;
+    font-family: IBM Plex Mono;
+}
+.paula p{
+    font-size: 23px;
+    color: #54b7ff;
+}
+.paula h2{
+    font-size: 50px;
+    color: #ffff;
+}
+
+.contato{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.icones{
+    width: 180px;
+    height: 55px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 2px solid #54b7ff;
 }
