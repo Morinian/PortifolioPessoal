@@ -56,6 +56,68 @@ nav .menu{
     justify-content: space-around;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/*efeito*/
+nav .menu a:hover {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #d60000,
+      0.025em 0.04em 0 #fffc00;
+    animation: glitch 725ms infinite;
+    transform: scale(1.2);
+}
+  
+  nav .menu a:hover:first-child {
+    animation: glitch 500ms infinite;
+
+  }
+  
+  nav .menu a:hover:last-child {
+    animation: glitch 375ms infinite;
+
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #d60000,
+        0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #d60000,
+        0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #d60000,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #d60000,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #d60000,
+        0 -0.04em 0 #fffc00;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #d60000,
+        0 -0.04em 0 #fffc00;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #d60000,
+        -0.04em -0.025em 0 #fffc00;
+    }
+  }
+  
 /* Imagens e titulos */
 .inicio{
     width: 100%;
@@ -94,11 +156,11 @@ nav .menu{
     font-family: IBM Plex Mono;
 }
 .paula p{
-    font-size: 23px;
+    font-size: clamp(1rem,4vw,2rem);
     color: #54b7ff;
 }
 .paula h2{
-    font-size: 50px;
+    font-size: clamp(2.2rem,4vw,10rem);
     color: #ffff;
 }
 
@@ -111,7 +173,7 @@ nav .menu{
     align-items: end;
 }
 .icones{
-    width: 180px;
+    width: 130px;
     height: 55px;
 
     display: flex;
@@ -119,4 +181,53 @@ nav .menu{
     align-items: center;
 
     border-bottom: 2px solid #54b7ff;
+}
+
+
+/*RESPONSIVO*/
+
+
+/*dispositivos móveis*/
+@media screen and (max-width: 480px) {
+
+.menu a{
+  display: none;
+}
+.mobile-menu.open{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  font-family: IBM Plex Mono;
+}
+.mobile-menu-icon {
+    display: block;
+}
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.open {
+    display: block;
+}
+
+/*header*/
+.inicio{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.caixa{
+  display: flex;
+  flex-direction: column;
+}
+.titulos {
+  width: 100%;
+}
+.paula{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 }
