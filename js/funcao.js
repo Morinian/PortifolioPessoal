@@ -4,10 +4,10 @@ function menuShow() {
     if (menuMobile.classList.contains('open')) {
         menuMobileheader.classList.remove("fund");
         menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "../img/menu_.svg";
+        document.querySelector('.icon').src = "../img/menu.svg";
     } else {
         menuMobile.classList.add('open');
         menuMobileheader.classList.add("fund");
-        document.querySelector('.icon').src = "../img/close_.svg";
+        document.querySelector('.icon').src = "../img/close.svg";
     }
 }
