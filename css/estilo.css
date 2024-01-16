@@ -173,11 +173,11 @@ nav .menu a:hover {
     align-items: end;
 }
 .icones{
-    width: 130px;
+    width: 200px;
     height: 55px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     border-bottom: 2px solid #54b7ff;
@@ -185,19 +185,244 @@ nav .menu a:hover {
 /*SOBRE*/
 .sobre{
   width: 100%;
-  height: 600px;
-  background: linear-gradient(to right, #272727 85%, #141414 50%);
+  height: auto;
+  background: linear-gradient(to right, #272727 80%, #141414 20%);
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-.foto{
-  width: 30%;
-  height: 70%;
-  background-color: #d60000;
+.caixasobre{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
+.caixatexto{
+  width: 55%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 50px;
+
+}
+.caixatexto .paragrafo{
+  font-family: IBM Plex Mono;
+  color: #ffff;
+
+  text-align: justify;
+  text-indent: 2em;
+  font-size: 16px;
+}
+.foto{
+  width: 28%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foto img{
+  width: 98%;
+
+  box-shadow: 30px 30px 1px #101010;
+}
+.titulosobrenome{
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titulosobre{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+ 
+  flex-direction: column;
+}
+.titulosobre hr{
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  height: 2px;
+  width: 40%;
+  background-color: #54b7ff;
+}
+.titulosobre p{
+  font-size: clamp(1rem,3vw,1.2rem);
+  font-family: IBM Plex Mono;
+  color: #54b7ff;
+}
+.titulosobre h2{
+  font-size: clamp(1rem,3vw,2.5rem);
+  font-weight: 100;
+  font-family: IBM Plex Mono;
+  color: #ffff;
+}
+
+.informacoes{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.curriculo{
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  
+  border:1px solid #ffff;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.curriculo p{
+  font-family: IBM Plex Mono;
+  color: #ffff;
+  font-size: 20px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.duasinformacoes{
+  display: flex;
+ justify-content: space-between;
+}
+
+
+.botao{
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.botao button{
+  width: 200px;
+  border-radius: 5px;
+  text-decoration: none; 
+
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: bold;
+
+  padding: 20px;
+}
+#but1 {
+  background-color: #141414;
+  color: #ffff;
+}
+#but2 {
+  background-color: #54b7ff;
+  color: #141414;
+}
+#but1:hover{
+  background-color: #ffff;
+  color: #141414;
+}
+#but2:hover{
+  background-color: #ffff;
+  color: #141414;
+}
+
+/*skills*/
+
+.skills{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 100px;
+}
+.titulohab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulohab hr{
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  height: 2px;
+  width: 50%;
+  background-color: #54b7ff;
+}
+.titulohab p{
+  font-size: clamp(1rem,3vw,1.2rem);
+  font-family: IBM Plex Mono;
+  color: #54b7ff;
+}
+.titulohabnome h2{
+  font-size: clamp(1rem,3vw,2.5rem);
+  font-weight: 100;
+  font-family: IBM Plex Mono;
+  color: #ffff;
+}
+.quadrados{
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.servicos{
+  width: 350px;
+  height: 300px;
+
+  background-color: #272727;
+  color: #fff;
+  font-family: IBM Plex Mono;
+  font-size: 28px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 30px 30px 20px #0e0e0e;
+  margin-top: 10px;
+
+  transition: 0.5s ease-in-out;
+}
+.servicos:hover{
+  margin-bottom: 60px;
+  transition: 0.5s ease-in-out;
+
+  box-shadow: 30px 30px 1px #0e0e0e;
+}
+.servicos p{
+  margin-top: 15px;
+}
+#servicoazul{
+  background-color: #54b7ff;
+  color: #272727;
+}
+
 
 /*RESPONSIVO*/
 
@@ -254,4 +479,40 @@ nav .menu a:hover {
   align-items: center;
 }
 
+
+/*SOBRE*/
+.sobre{
+  background: linear-gradient(to bottom, #272727 90%, #141414 10%);
+}
+.sobre, .caixasobre{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+.caixatexto{
+ width: 90%;
+}
+.duasinformacoes{
+  display: flex;
+  flex-direction: column;
+}
+.curriculo p{
+  font-size: 19px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 18px;
+}
+.botao button {
+  width: 160px;
+  font-size: 15px;
+}
+.foto{
+  width: 55%;
+}
+/*Habilidades*/
+.quadrados{
+  display: flex;
+  flex-direction: column;
+}
 }
