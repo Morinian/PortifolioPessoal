@@ -733,4 +733,15 @@ footer{
   margin-top: 100px;
 }
 
+/*FORMAÇÕES*/
+.f1{
+  width: 100%;
+}
+.formações{
+  display: flex;
+  flex-direction: column;
+}
+.tituloformacao{
+  margin-top: 50px;
+}
 }
