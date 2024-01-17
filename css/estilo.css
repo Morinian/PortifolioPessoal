@@ -384,6 +384,7 @@ nav .menu a:hover {
 .quadrados{
   height: auto;
   width: 100%;
+  margin-top: 30px;
 
   display: flex;
   justify-content: space-evenly;
@@ -425,6 +426,46 @@ nav .menu a:hover {
 
 /*Linguagens*/
 
+.linguagens{
+  margin-top: 100px;
+}
+.caixas{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#caixa1,#caixa2{
+  width: 30%;
+  height: 400px;
+
+  margin-top: 60px;
+
+  background-color: #272727;
+  box-shadow: 
+  30px 30px 1px #0e0e0e,
+  -30px -30px 1px #54b7ff; 
+}
+.titulohab2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulohab2 hr{
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  height: 2px;
+  width: 20%;
+  background-color: #54b7ff;
+}
+.titulohab2 p{
+  font-size: clamp(1rem,3vw,1.2rem);
+  font-family: IBM Plex Mono;
+  color: #54b7ff;
+}
 /*RESPONSIVO*/
 
 
@@ -515,5 +556,17 @@ nav .menu a:hover {
 .quadrados{
   display: flex;
   flex-direction: column;
+}
+
+/*Linguagens*/
+.caixas{
+  display: flex;
+  flex-direction: column;
+}
+#caixa1,#caixa2{
+  width: 70%;
+}
+#caixa2{
+  margin-top: 100px;
 }
 }
