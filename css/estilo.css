@@ -439,7 +439,7 @@ nav .menu a:hover {
 }
 #caixa1,#caixa2{
   width: 30%;
-  height: 400px;
+  height: 430px;
 
   margin-top: 60px;
 
@@ -447,6 +447,28 @@ nav .menu a:hover {
   box-shadow: 
   30px 30px 1px #0e0e0e,
   -30px -30px 1px #54b7ff; 
+}
+#caixa1{
+  color: #fff;
+  font-family: IBM Plex Mono;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-size: 25px;
+}
+#caixa2{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#caixa2 img, #caixa2 svg{
+  width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .titulohab2{
   display: flex;
@@ -564,9 +586,13 @@ nav .menu a:hover {
   flex-direction: column;
 }
 #caixa1,#caixa2{
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 70%;
+  text-align: center ;
 }
-#caixa2{
+#caixa1{
   margin-top: 100px;
 }
+
 }
