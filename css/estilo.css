@@ -315,8 +315,9 @@ nav .menu a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
-.botao button{
+.botao a{
   width: 200px;
   border-radius: 5px;
   text-decoration: none; 
@@ -488,6 +489,75 @@ nav .menu a:hover {
   font-family: IBM Plex Mono;
   color: #54b7ff;
 }
+
+/*PROJETOS*/
+.projetos{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.caixinha{
+  height: 450px;
+  width: 500px;
+
+  background-color: #272727;
+  margin-top: 50px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding-top: 15px;
+}
+.caixinha img{
+  width: 80%;
+  border-radius: 2px;
+}
+.tituloprojeto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.tituloprojeto{
+  font-size: 25px;
+  font-weight:normal;
+
+  font-family: IBM Plex Mono;
+  color: #ffff;
+}
+.tituloprojeto hr{
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  height: 2px;
+  width: 40%;
+  background-color: #54b7ff;
+}
+.botao2{
+  width: 80%;
+  height: 120px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.botao2 a{
+  width: 120px;
+  border-radius: 5px;
+  text-decoration: none; 
+
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: bold;
+
+  padding: 15px;
+  text-align: center;
+}
+
+
+
 /*RESPONSIVO*/
 
 
